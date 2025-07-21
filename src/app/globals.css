@@ -1,42 +1,103 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@media (prefers-color-scheme: dark) {
+/* Design system for menuisier website - warm wood tones */
+
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #fbf9f7;
+    --foreground: #27221f;
+
+    --card: #f5f2ef;
+    --card-foreground: #27221f;
+
+    --popover: #f5f2ef;
+    --popover-foreground: #27221f;
+
+    --primary: #aa5b26;
+    --primary-hover: #c1682d;
+    --primary-foreground: #fbf9f7;
+
+    --secondary: #ece4d7;
+    --secondary-foreground: #423830;
+
+    --muted: #f2ede7;
+    --muted-foreground: #7a6f67;
+
+    --accent: #e6d5b9;
+    --accent-foreground: #27221f;
+
+    --destructive: #f76965;
+    --destructive-foreground: #fbf9f7;
+
+    --border: #e6dfd7;
+    --input: #e6dfd7;
+    --ring: #b7844a;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: #fafafa;
+    --sidebar-foreground: #3f4246;
+
+    --sidebar-primary: #18191b;
+
+    --sidebar-primary-foreground: #fafafa;
+
+    --sidebar-accent: #f3f4f7;
+
+    --sidebar-accent-foreground: #18191b;
+
+    --sidebar-border: #ebeff3;
+
+    --sidebar-ring: #389bfe;
+  }
+
+  .dark {
+    --background: #0a0e1a;
+    --foreground: #f6fafe;
+
+    --card: #0a0e1a;
+    --card-foreground: #f6fafe;
+
+    --popover: #0a0e1a;
+    --popover-foreground: #f6fafe;
+
+    --primary: #f6fafe;
+    --primary-foreground: #202b3b;
+
+    --secondary: #22334a;
+    --secondary-foreground: #f6fafe;
+
+    --muted: #22334a;
+    --muted-foreground: #a0b1c4;
+
+    --accent: #22334a;
+    --accent-foreground: #f6fafe;
+
+    --destructive: #7e2523;
+    --destructive-foreground: #f6fafe;
+
+    --border: #22334a;
+    --input: #22334a;
+    --ring: #d7e5f3;
+    --sidebar-background: #18191b;
+    --sidebar-foreground: #f3f4f7;
+    --sidebar-primary: #2870db;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #232428;
+    --sidebar-accent-foreground: #f3f4f7;
+    --sidebar-border: #232428;
+    --sidebar-ring: #389bfe;
   }
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+@layer base {
+  * {
+    @apply border-border;
+  }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+  body {
+    @apply bg-background text-foreground;
   }
 }
