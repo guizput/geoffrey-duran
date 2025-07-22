@@ -3,7 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, Hammer, Phone } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
+import Logo from "./ui/logo";
 
 const navigation = [
   { name: "Accueil", href: "/" },
@@ -25,20 +26,7 @@ export default function Header() {
     <header className="bg-background border-b border-border sticky top-0 z-50 relative">
       <nav className="mx-auto max-w-7xl px-6 lg:px-8" aria-label="Top">
         <div className="flex w-full items-center justify-between py-4">
-          {/* Logo */}
-          <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
-              <Hammer className="h-8 w-8 text-primary" />
-              <div>
-                <div className="text-xl [font-variant:small-caps] font-medium text-foreground">
-                  Geoffrey Duran
-                </div>
-                <div className="text-sm text-muted-foreground mt-[-4px]">
-                  Artisan menuisier
-                </div>
-              </div>
-            </Link>
-          </div>
+          <Logo />
 
           {/* Desktop Navigation */}
           <div className="ml-10 hidden lg:flex lg:space-x-8">

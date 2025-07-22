@@ -7,6 +7,27 @@ import {
   CardTitle,
 } from "./ui/card";
 
+const process = {
+  title: "Notre processus de création",
+  description:
+    "De l'idée à la réalisation, découvrez comment nous concrétisons vos envies.",
+  steps: [
+    {
+      title: "Étude et conception",
+      description:
+        "Prise de mesures, étude de vos besoins et création des plans",
+    },
+    {
+      title: "Fabrication",
+      description: "Réalisation de tous les éléments dans notre atelier",
+    },
+    {
+      title: "Installation",
+      description: "Pose et finitions sur site avec un rendu parfait",
+    },
+  ],
+};
+
 interface Step {
   title: string;
   description: string;
@@ -18,19 +39,7 @@ interface Feature {
   items: string[];
 }
 
-interface Process {
-  title: string;
-  description: string;
-  steps: Step[];
-}
-
-export default function Features({
-  features,
-  process,
-}: {
-  features: Feature;
-  process: Process;
-}) {
+export default function Features({ features }: { features: Feature }) {
   return (
     <section className="py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

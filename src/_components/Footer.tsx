@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Hammer, Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
+import Logo from "./ui/logo";
 
 export default function Footer() {
   const services = [
@@ -16,18 +17,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo et description */}
           <div className="col-span-1 lg:col-span-2">
-            <Link href="/" className="flex items-center space-x-2 mb-4">
-              <Hammer className="h-8 w-8 text-primary" />
-              <div>
-                <div className="text-xl font-bold text-foreground">
-                  Menuiserie Artisanale
-                </div>
-                <div className="text-sm text-muted-foreground">
-                  Sur mesure & Tradition
-                </div>
-              </div>
-            </Link>
-            <p className="text-muted-foreground mb-6 max-w-md">
+            <Logo />
+            <p className="text-muted-foreground mb-6 mt-4 max-w-md">
               Artisan menuisier passionné, je conçois et fabrique vos meubles et
               aménagements sur mesure en bois massif. Savoir-faire traditionnel
               et finitions soignées pour valoriser votre intérieur.
@@ -92,29 +83,6 @@ export default function Footer() {
                   <div>50km autour de [Votre ville]</div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom */}
-        <div className="mt-12 pt-8 border-t border-border">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-muted-foreground text-sm">
-              © 2024 Menuiserie Artisanale. Tous droits réservés.
-            </p>
-            <div className="mt-4 md:mt-0 flex space-x-6">
-              <Link
-                href="/mentions-legales"
-                className="text-muted-foreground hover:text-primary text-sm transition-colors"
-              >
-                Mentions légales
-              </Link>
-              <Link
-                href="/contact"
-                className="text-muted-foreground hover:text-primary text-sm transition-colors"
-              >
-                Contact
-              </Link>
             </div>
           </div>
         </div>
