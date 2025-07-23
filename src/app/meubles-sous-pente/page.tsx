@@ -6,18 +6,18 @@ import { Metadata } from "next";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Cuisine sur mesure en bois massif",
+    title: "Meubles sous escalier et sous pente",
     description:
-      "Cuisine sur mesure en bois massif. Conception, fabrication et pose de cuisines artisanales. Chêne, hêtre, noyer. Devis gratuit.",
+      "Optimisez chaque recoin de votre intérieur avec un meuble sur mesure parfaitement adapté à vos espaces complexes. Rangement, bibliothèque, dressing, bureau : tout est possible.",
   };
 }
 
 const heroData = {
-  title: "Cuisine sur mesure",
-  subtitle: "en bois massif",
+  title: "Meubles sous escalier",
+  subtitle: "et sous pente",
   description:
-    "Votre cuisine mérite d'être aussi unique que vous. Nous concevons et fabriquons des cuisines 100 % sur mesure, adaptées à vos habitudes, vos contraintes d'espace et vos goûts. Bois clair ou foncé, design moderne ou rustique, chaque cuisine est une pièce unique.",
-  imageUrl: "/cuisine-bois.jpg",
+    "Optimisez chaque recoin de votre intérieur avec un meuble sur mesure parfaitement adapté à vos espaces complexes. Rangement, bibliothèque, dressing, bureau : tout est possible.",
+  imageUrl: "/meuble-sous-pente.jpg",
 };
 
 const gallery = {
@@ -37,18 +37,12 @@ const features = {
   title: "Ce qui est inclus",
   description: "Une prestation complète de la conception à l'installation",
   items: [
-    "Plans personnalisés",
-    "Fabrication artisanale locale ",
-    "Large choix d'essences de bois",
-    "Finitions soignées",
-    "Intégration des électroménagers",
-    "Rangements optimisés",
-    "Quincaillerie de qualité",
-    "Pose et installation complète",
+    "Solutions 100 % personnalisées",
+    "Fabrication artisanale en bois massif ",
   ],
 };
 
-export default function CuisineSurMesure() {
+export default function MeublesSousPente() {
   return (
     <div className="min-h-screen bg-background">
       <HeroService {...heroData} />

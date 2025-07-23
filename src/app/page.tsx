@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Award, Heart, Leaf } from "lucide-react";
@@ -36,7 +34,7 @@ const services = [
     description:
       "Optimisez vos espaces de rangement avec des dressings conçus parfaitement pour votre intérieur.",
     href: "/dressing-sur-mesure",
-    image: "/dressing-bois.jpg",
+    image: "/dressing-sur-mesure.jpg",
     features: [
       "Optimisation d'espace",
       "Finitions soignées",

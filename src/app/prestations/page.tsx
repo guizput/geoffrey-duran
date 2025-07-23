@@ -1,11 +1,13 @@
-"use client";
-
-import Link from "next/link";
-import Image from "next/image";
-import { ArrowRight, Award, Hammer, Heart, Leaf } from "lucide-react";
-import { Button } from "@/_components/ui/button";
 import ServiceCard from "@/_components/ServiceCard";
-import Footer from "@/_components/Footer";
+import { Metadata } from "next";
+
+export function generateMetadata(): Metadata {
+  return {
+    title: "Nos Prestations",
+    description:
+      "Découvrez toutes nos prestations de menuiserie artisanale, du meuble sur mesure à l'aménagement complet.",
+  };
+}
 
 const services = [
   {
@@ -33,11 +35,11 @@ const services = [
     ],
   },
   {
-    title: "Dressing sur mesure",
+    title: "Meubles sous pente",
     description:
-      "Optimisez vos espaces de rangement avec des dressings conçus parfaitement pour votre intérieur.",
-    href: "/dressing-sur-mesure",
-    image: "/dressing-bois.jpg",
+      "Optimisez vos espaces de rangement avec des meubles sur mesure adaptés aux sous-pentes et sous-escaliers.",
+    href: "/meubles-sous-pente",
+    image: "/meuble-sous-pente.jpg",
     features: [
       "Optimisation d'espace",
       "Finitions soignées",
@@ -45,27 +47,27 @@ const services = [
     ],
   },
   {
-    title: "Bibliothèque sur mesure",
+    title: "Dressing sur mesure",
     description:
-      "Bibliothèques en bois massif, conçues et fabriquées selon vos besoins et votre espace.",
-    href: "/bibliotheques-sur-mesure",
-    image: "/bibliotheque.jpg",
+      "Dressings en bois ou sur mesure, pensés et fabriqués pour optimiser vos rangements et valoriser votre intérieur.",
+    href: "/dressing-sur-mesure",
+    image: "/dressing-sur-mesure.jpg",
     features: [
-      "Bois massif de qualité",
-      "Conception sur mesure",
-      "Pose professionnelle",
+      "Conception 100% personnalisée",
+      "Matériaux de qualité au choix",
+      "Installation professionnelle et soignée",
     ],
   },
   {
-    title: "Meubles sur mesure (TV, salle de bain, etc.)",
+    title: "Bibliothèque sur mesure",
     description:
-      "Habillage de marches, création d'escaliers en bois, rénovation ou construction neuve.",
-    href: "/meubles-sur-mesure",
-    image: "/escalier-bois.jpg",
+      "Bibliothèques design et robustes, créées à la demande pour s’adapter parfaitement à votre espace et à votre style.",
+    href: "/bibliotheque-sur-mesure",
+    image: "/bibliotheque.jpg",
     features: [
-      "Escaliers sur mesure",
-      "Habillage de marches",
-      "Rénovation complète",
+      "Conception personnalisée selon vos envies",
+      "Matériaux de qualité : bois massif, stratifié...",
+      "Installation artisanale et soignée",
     ],
   },
   {
