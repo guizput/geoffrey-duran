@@ -12,10 +12,14 @@ export default {
         "2xl": "1400px",
       },
     },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1000px", // Ta nouvelle valeur !
+      xl: "1280px",
+      "2xl": "1536px",
+    },
     extend: {
-      screens: {
-        lg: "1000px",
-      },
       colors: {
         border: "var(--border)",
         input: "var(--input)",
