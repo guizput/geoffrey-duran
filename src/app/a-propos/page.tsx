@@ -106,7 +106,7 @@ export default function APropos() {
               </h2>
               <div className="mt-8 space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-medium mt-1">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-medium flex-shrink-0">
                     <Clock className="h-4 w-4" />
                   </div>
                   <div>
@@ -121,7 +121,7 @@ export default function APropos() {
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-medium mt-1">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-medium flex-shrink-0">
                     <Hammer className="h-4 w-4" />
                   </div>
                   <div>
@@ -137,7 +137,7 @@ export default function APropos() {
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-medium mt-1">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-medium flex-shrink-0">
                     <MapPin className="h-4 w-4" />
                   </div>
                   <div>
