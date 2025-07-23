@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       screens: {
-        lg: "1000px", // Ici tu ne modifies que lg, les autres restent inchangés
+        lg: "1000px",
       },
       colors: {
         border: "var(--border)",

@@ -70,7 +70,10 @@ export default function Features({ features }: { features: Feature }) {
             </CardHeader>
             <CardContent className="space-y-4">
               {process.steps.map((step, index) => (
-                <div key={index} className="flex items-start space-x-3">
+                <div
+                  key={index + step.title}
+                  className="flex items-start space-x-3"
+                >
                   <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-medium">
                     {index + 1}
                   </div>

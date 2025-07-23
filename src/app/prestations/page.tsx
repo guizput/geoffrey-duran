@@ -130,18 +130,6 @@ const services = [
       "Pose professionnelle",
     ],
   },
-  {
-    title: "Pose de fenêtres, portes et volets roulants",
-    description:
-      "Optimisez vos espaces de rangement avec des dressings conçus parfaitement pour votre intérieur.",
-    href: "/pose-fenetres-portes",
-    image: "/dressing-bois.jpg",
-    features: [
-      "Optimisation d'espace",
-      "Finitions soignées",
-      "Aménagement personnalisé",
-    ],
-  },
 ];
 
 const PrestationsPage = () => {
