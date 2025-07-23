@@ -61,7 +61,7 @@ const services = [
   {
     title: "Bibliothèque sur mesure",
     description:
-      "Bibliothèques design et robustes, créées à la demande pour s’adapter parfaitement à votre espace et à votre style.",
+      "Bibliothèques design et robustes, créées à la demande pour s'adapter parfaitement à votre espace et à votre style.",
     href: "/bibliotheque-sur-mesure",
     image: "/bibliotheque.jpg",
     features: [
@@ -71,39 +71,63 @@ const services = [
     ],
   },
   {
-    title: "Tables et plateaux bois massif",
+    title: "Meubles sur mesure",
     description:
-      "Optimisez vos espaces de rangement avec des dressings conçus parfaitement pour votre intérieur.",
+      "Création de meubles sur mesure pour chaque pièce : meuble TV, salle de bain, buffet, commode, mobilier d'entrée, etc.",
+    href: "/meubles-sur-mesure",
+    image: "/meuble-sur-mesure.jpg",
+    features: [
+      "Design personnalisé selon vos envies",
+      "Choix des matériaux et finitions",
+      "Installation professionnelle",
+    ],
+  },
+  {
+    title: "Tables à manger & plateaux en bois massif",
+    description:
+      "Tables à manger, plateaux et tables basses en bois massif : conception artisanale et finitions personnalisées.",
     href: "/tables-bois-massif",
-    image: "/dressing-bois.jpg",
+    image: "/table-bois-massif.jpg",
     features: [
-      "Optimisation d'espace",
-      "Finitions soignées",
-      "Aménagement personnalisé",
+      "Bois massif de qualité (chêne, noyer, etc.)",
+      "Dimensions et finitions sur mesure",
+      "Fabrication artisanale",
     ],
   },
   {
-    title: "Parquet – pose, ponçage, vitrification",
+    title: "Parquet : pose, ponçage, vitrification",
     description:
-      "Optimisez vos espaces de rangement avec des dressings conçus parfaitement pour votre intérieur.",
+      "Pose de parquet, rénovation, ponçage et vitrification pour un sol comme neuf et durable.",
     href: "/parquet-pose-renovation",
-    image: "/dressing-bois.jpg",
+    image: "/parquet.jpg",
     features: [
-      "Optimisation d'espace",
-      "Finitions soignées",
-      "Aménagement personnalisé",
+      "Pose tous types de parquets",
+      "Rénovation et ponçage professionnel",
+      "Finitions vitrifiées, huilées ou cirées",
     ],
   },
   {
-    title: "Volets bois sur mesure",
+    title: "Volets sur mesure",
     description:
-      "Optimisez vos espaces de rangement avec des dressings conçus parfaitement pour votre intérieur.",
+      "Volets en bois conçus et fabriqués sur mesure : robustesse, esthétique et installation professionnelle.",
     href: "/volets-sur-mesure",
-    image: "/dressing-bois.jpg",
+    image: "/volets-sur-mesure.jpg",
     features: [
-      "Optimisation d'espace",
-      "Finitions soignées",
-      "Aménagement personnalisé",
+      "Fabrication artisanale en bois",
+      "Finitions personnalisées",
+      "Pose et rénovation de volets",
+    ],
+  },
+  {
+    title: "Pose de fenêtres, portes et volets roulants",
+    description:
+      "Installation de fenêtres, portes et volets roulants sur mesure : sécurité, isolation et finitions soignées.",
+    href: "/pose-fenetres-portes",
+    image: "/pose-fenetres-portes.jpg",
+    features: [
+      "Conseils personnalisés",
+      "Matériaux au choix : bois, alu, PVC",
+      "Pose professionnelle",
     ],
   },
   {
