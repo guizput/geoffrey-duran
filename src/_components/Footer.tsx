@@ -4,11 +4,31 @@ import Logo from "./ui/logo";
 
 export default function Footer() {
   const services = [
-    { name: "Cuisine sur mesure", href: "/cuisine-sur-mesure" },
-    { name: "Marches & Escaliers", href: "/marches-escalier-sur-mesure" },
-    { name: "Dressing sur mesure", href: "/dressing-sur-mesure" },
-    { name: "Meubles sur mesure", href: "/meubles-sur-mesure" },
-    { name: "Parquet", href: "/parquet-pose-renovation" },
+    { name: "Cuisine sur mesure", href: "/prestations/cuisine-sur-mesure" },
+    {
+      name: "Marches & Escaliers",
+      href: "/prestations/marches-et-escaliers",
+    },
+    { name: "Meubles sous pente", href: "/prestations/meubles-sous-pente" },
+    { name: "Dressing sur mesure", href: "/prestations/dressing-sur-mesure" },
+    {
+      name: "Bibliothèque sur mesure",
+      href: "/prestations/bibliotheque-sur-mesure",
+    },
+    { name: "Meubles sur mesure", href: "/prestations/meubles-sur-mesure" },
+    {
+      name: "Tables à manger & plateaux en bois massif",
+      href: "/prestations/tables-bois-massif",
+    },
+    {
+      name: "Parquet : pose, ponçage, vitrification",
+      href: "/prestations/parquet-pose-renovation",
+    },
+    { name: "Volets sur mesure", href: "/prestations/volets-sur-mesure" },
+    {
+      name: "Pose de fenêtres, portes et volets roulants",
+      href: "/prestations/pose-fenetres-portes",
+    },
   ];
 
   return (
@@ -70,17 +90,11 @@ export default function Footer() {
                 <Phone className="h-5 w-5 text-primary" />
                 <span className="text-muted-foreground">06 12 34 56 78</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-primary" />
-                <span className="text-muted-foreground">
-                  contact@menuiserie-artisanale.fr
-                </span>
-              </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary mt-1" />
                 <div className="text-muted-foreground">
                   <div>Zone d&apos;intervention :</div>
-                  <div>50km autour de [Votre ville]</div>
+                  <div>Ile de France</div>
                 </div>
               </div>
             </div>

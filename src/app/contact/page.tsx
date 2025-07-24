@@ -49,30 +49,21 @@ export default function Contact() {
                     {
                       icon: Phone,
                       title: "Téléphone",
-                      lines: ["06 12 34 56 78", "Du lundi au vendredi, 8h-18h"],
-                    },
-                    {
-                      icon: Mail,
-                      title: "Email",
-                      lines: [
-                        "contact@menuiserie-artisanale.fr",
-                        "Réponse sous 24h",
-                      ],
+                      lines: ["06 89 42 88 17", "Du lundi au samedi, 8h-18h"],
                     },
                     {
                       icon: MapPin,
                       title: "Zone d'intervention",
                       lines: [
-                        "50km autour de [Votre ville]",
+                        "Ile de France",
                         "Déplacements gratuits pour devis",
                       ],
                     },
                     {
                       icon: Clock,
-                      title: "Horaires atelier",
+                      title: "Horaires d'intervention",
                       lines: [
-                        "Lun-Ven : 8h00 - 18h00",
-                        "Sam : 9h00 - 12h00",
+                        "Lun-Sam : 8h00 - 18h00",
                         "Sur rendez-vous uniquement",
                       ],
                     },
