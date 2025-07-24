@@ -85,15 +85,13 @@ export default function Header() {
           </div>
         )}
       </nav>
-      <div className="bg-primary absolute top-full right-0 py-3 px-5 mt-[1px] rounded-bl-3xl hover:bg-primary-hover shadow-md">
-        <Link
-          href="/contact"
-          className="flex items-center space-x-3 text-white font-medium"
-        >
-          <Phone className="h-5 w-5" />
-          <span>Contactez-nous</span>
-        </Link>
-      </div>
+      <Link
+        href="/contact"
+        className="flex items-center space-x-3 text-white font-medium bg-primary absolute top-full right-0 py-3 px-5 mt-[1px] rounded-bl-3xl hover:bg-primary-hover shadow-md"
+      >
+        <Phone className="h-5 w-5" />
+        <span>Contactez-nous</span>
+      </Link>
     </header>
   );
 }

@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/_components/Header";
 import Footer from "@/_components/Footer";
 import { Toaster } from "@/_components/ui/toaster";
+import WoodenFrameLayout from "@/_components/WoodenFrameLayout";
 
 export const metadata: Metadata = {
   title: {
@@ -22,7 +23,8 @@ export default function RootLayout({
     <html lang="fr">
       <body className="min-h-screen bg-background">
         <Header />
-        {children}
+        <WoodenFrameLayout>{children}</WoodenFrameLayout>
+
         <Toaster />
         <Footer />
       </body>
