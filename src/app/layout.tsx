@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/_components/Header";
 import Footer from "@/_components/Footer";
+import { Toaster } from "@/_components/ui/toaster";
 
 export const metadata: Metadata = {
   title: {
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className="min-h-screen bg-background">
         <Header />
         {children}
+        <Toaster />
         <Footer />
       </body>
     </html>

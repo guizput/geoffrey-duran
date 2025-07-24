@@ -15,6 +15,9 @@ import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
 import { Send } from "lucide-react";
 
+// Remplace par ton endpoint Formsubmit personnalisé
+const FORMSUBMIT_URL = "https://formsubmit.co/2faa910babda9b690d286f65ea43d814";
+
 export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
@@ -23,16 +26,47 @@ export default function ContactForm() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simule une soumission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
 
-    toast({
-      title: "Message envoyé !",
-      description: "Nous vous recontacterons dans les plus brefs délais.",
-    });
+    // Ajoute des champs Formsubmit si besoin
+    formData.append("_captcha", "false");
+
+    try {
+      const response = await fetch(FORMSUBMIT_URL, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        console.log("Form submitted successfully");
+        toast({
+          title: "Message envoyé !",
+          description: "Nous vous recontacterons dans les plus brefs délais.",
+          variant: "success",
+        });
+        form.reset();
+      } else {
+        console.error("Error submitting form:", response.statusText);
+        toast({
+          title: "Erreur lors de l'envoi",
+          description: "Une erreur est survenue. Veuillez réessayer plus tard.",
+          variant: "error",
+        });
+      }
+    } catch (error) {
+      console.error("Network error:", error);
+      toast({
+        title: "Erreur réseau",
+        description: "Une erreur est survenue. Veuillez réessayer plus tard.",
+        variant: "error",
+      });
+    }
 
     setIsSubmitting(false);
-    (e.target as HTMLFormElement).reset();
   };
 
   return (
@@ -88,11 +122,13 @@ export default function ContactForm() {
                 <option value="">Sélectionnez un type de projet</option>
                 <option value="cuisine">Cuisine sur mesure</option>
                 <option value="escalier">Marches et escaliers</option>
+                <option value="meubles">Meubles sur mesure</option>
                 <option value="dressing">Dressing sur mesure</option>
                 <option value="bibliotheque">Bibliothèque</option>
-                <option value="meubles">Meubles sur mesure</option>
+                <option value="table">Tables à manger</option>
                 <option value="parquet">Parquet</option>
                 <option value="volets">Volets</option>
+                <option value="fenetres">Fenêtres</option>
                 <option value="autre">Autre</option>
               </select>
             </div>
@@ -124,6 +160,12 @@ export default function ContactForm() {
               </select>
             </div>
 
+            {/* Champ honeypot anti-spam */}
+            <input type="text" name="_honey" className="hidden" />
+
+            {/* Pour désactiver le captcha Formsubmit si besoin */}
+            {/* <input type="hidden" name="_captcha" value="false" /> */}
+
             <Button type="submit" disabled={isSubmitting} className="w-full">
               {isSubmitting ? (
                 <>Envoi en cours...</>
@@ -136,8 +178,8 @@ export default function ContactForm() {
             </Button>
 
             <p className="text-xs text-muted-foreground">
-              * Champs obligatoires. Vos données personnelles sont protégées et
-              ne seront utilisées que pour traiter votre demande.
+              * Champs obligatoires. Vos données personnelles ne seront
+              utilisées que pour traiter votre demande.
             </p>
           </form>
         </CardContent>
