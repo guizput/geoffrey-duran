@@ -1,6 +1,5 @@
 import Features from "@/_components/Features";
 import CtaSection from "@/_components/CtaSection";
-import Gallery from "@/_components/Gallery";
 import { Metadata } from "next";
 import HeroAbout from "@/_components/HeroAbout";
 import { Award, Clock, Hammer, Heart, Leaf, MapPin } from "lucide-react";
@@ -14,9 +13,9 @@ import {
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Bibliothèque sur mesure",
+    title: "A propos",
     description:
-      "Faites réaliser votre bibliothèque sur mesure par un artisan menuisier local : optimisation de l'espace, choix des matériaux, finitions haut de gamme. Conception, fabrication et pose professionnelles.",
+      "Découvrez l'artisan derrière vos créations sur mesure en bois. Un menuisier passionné par le travail du bois, alliant savoir-faire traditionnel et innovation.",
   };
 }
 

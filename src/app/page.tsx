@@ -9,7 +9,7 @@ const services = [
     title: "Cuisine sur mesure",
     description:
       "Cuisines en bois massif, conçues et fabriquées selon vos besoins et votre espace.",
-    href: "/cuisine-sur-mesure",
+    href: "/prestations/cuisine-sur-mesure",
     image: "/cuisine-bois.jpg",
     features: [
       "Bois massif de qualité",
@@ -21,7 +21,7 @@ const services = [
     title: "Marches & Escaliers",
     description:
       "Habillage de marches, création d'escaliers en bois, rénovation ou construction neuve.",
-    href: "/marches-et-escaliers",
+    href: "/prestations/marches-et-escaliers",
     image: "/escalier-bois.jpg",
     features: [
       "Escaliers sur mesure",
@@ -33,7 +33,7 @@ const services = [
     title: "Dressing sur mesure",
     description:
       "Optimisez vos espaces de rangement avec des dressings conçus parfaitement pour votre intérieur.",
-    href: "/dressing-sur-mesure",
+    href: "/prestations/dressing-sur-mesure",
     image: "/dressing-sur-mesure.jpg",
     features: [
       "Optimisation d'espace",
