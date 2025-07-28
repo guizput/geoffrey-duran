@@ -80,7 +80,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="bg-background border-b border-border sticky top-0 z-50 relative">
+    <header className="bg-background border-b border-border sticky top-0 z-50">
       <nav className="mx-auto max-w-7xl px-6 lg:px-8" aria-label="Top">
         <div className="flex w-full items-center justify-between py-4">
           <Logo />
